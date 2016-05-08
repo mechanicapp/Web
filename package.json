@@ -1,0 +1,25 @@
+{
+  "name": "mechanicapp",
+  "version": "1.0.0",
+  "description": "MechanicApp Rest",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mechanicapp/Web.git"
+  },
+  "author": "Harcorp | MechanicApp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mechanicapp/Web/issues"
+  },
+  "homepage": "https://github.com/mechanicapp/Web#readme",
+  "dependencies": {
+    "dateformat": "^1.0.12",
+    "express": "^4.13.4",
+    "firebase": "^2.4.2",
+    "google-distance": "^1.0.1"
+  }
+}
