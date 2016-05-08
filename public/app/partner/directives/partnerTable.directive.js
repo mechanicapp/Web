@@ -10,7 +10,7 @@
       templateUrl: 'app/partner/directives/partnerTable.html',
       restrict: 'E',
       controller: PartnerTableController,
-      controllerAs: 'mv',
+      controllerAs: 'vm',
       bindToController: true,
       scope: {
         partners: '='
@@ -18,7 +18,7 @@
     };
   }
   function PartnerTableController() {
-    var mv = this;
+    var vm = this;
   }
 
 })();

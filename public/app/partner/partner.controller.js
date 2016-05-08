@@ -9,9 +9,9 @@
 
   function PartnerController(partnerService) {
 
-    var mv = this;
+    var vm = this;
 
-    mv.partners = partnerService.getPartners();
+    vm.partners = partnerService.getPartners();
   }
 
 })();
