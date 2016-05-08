@@ -31,7 +31,7 @@
 
     function getClientes() {
       if (!clientes) {
-        clientes = $firebaseArray(firebaseDataService.users);
+        clientes = $firebaseArray(firebaseDataService.clientes);
       }
       return clientes;
     }

@@ -12,7 +12,8 @@
 
     var service = {
       root: root,
-      users: root.child('Clientes')
+      clientes: root.child('Clientes'),
+      partners: root.child('Partner')
     };
 
     return service;

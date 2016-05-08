@@ -8,7 +8,8 @@
       'firebase',
       'app.layout',
       'app.core',
-      'app.cliente'
+      'app.cliente',
+      'app.partner'
     ])
     .config(configFunction);
 
