@@ -5,6 +5,8 @@
        <ul class="right hide-on-med-and-down">
          <li><a href="#/cliente">Clientes</a></li>
          <li><a href="#/partner">Partners</a></li>
+         <li><a href="#/login" ng-hide="vm.isLoggedIn()">Log in</a></li>
+         <li><a href="" ng-click="vm.logout()" ng-show="vm.isLoggedIn()" >Log out</a></li>
        </ul>
      </div>
    </nav>

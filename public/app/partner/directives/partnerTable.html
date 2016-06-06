@@ -6,8 +6,11 @@
         <th>Celular</th>
         <th>Acciones</th>
     </tr>
+
+
     </thead>
     <tr ng-repeat="partner in vm.partners">
+      <td>{{ vm.partners | json }} </td>
         <td>
             <div><strong>{{ partner.nombres }}</strong></div>
         </td>
@@ -18,7 +21,7 @@
             <div>{{ partner.celular }}</div>
         </td>
         <td>
-            <button  class="btn btn-danger">Eliminar</button>
+            <button ng-click="vm.removePartner(partner)" class="btn btn-danger">Eliminar</button>
         </td>
     </tr>
 </table>

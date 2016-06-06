@@ -18,18 +18,34 @@
     <gz-navbar></gz-navbar>
     <div ng-view></div>
     <!--Third-party JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="resouces/js/jquery.min.js"></script>
     <script type="text/javascript" src="resouces/js/materialize.min.js"></script>
     <!-- Angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.4.4/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.4.4/angular-animate.min.js"></script>-->
+
+    <script src="resouces/js/angular.min.js"></script>
+    <script src="resouces/js/angular-route.js"></script>
+    <script src="resouces/js/angular-animate.min.js"></script>
+
     <!-- Firebase -->
-    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-    <!-- AngularFire -->
-    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+    <!--<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script> -->
+
+    <script src="resouces/js/firebase.js"></script>
+    <script src="resouces/js/angularfire.min.js"></script>
 
     <!--main app module-->
     <script src="app/app.module.js"></script>
+
+    <!-- Auth Module -->
+    <script src="app/auth/auth.module.js"></script>
+    <script src="app/auth/config.route.js"></script>
+    <script src="app/auth/auth.controller.js"></script>
+    <script src="app/auth/auth.service.js"></script>
+    <script src="app/auth/authForm.directive.js"></script>
 
     <!--Cliente Module-->
     <script src="app/cliente/cliente.module.js"></script>
@@ -42,7 +58,7 @@
     <script src="app/partner/config.route.js"></script>
     <script src="app/partner/partner.controller.js"></script>
     <script src="app/partner/directives/partnerTable.directive.js"></script>
-    <script src="app/partner/directives/partnerForm.directive.js"></script>
+    <script src="app/partner/directives/step1Form.directive.js"></script>
 
     <!--Core Module-->
     <script src="app/core/core.module.js"></script>

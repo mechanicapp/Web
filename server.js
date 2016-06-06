@@ -14,7 +14,7 @@ app.listen(PORT, function() {
 
   /*--- CONSTANTES ---*/
   var API_KEY = "AIzaSyAnKxRYj7wc2ZqiRx3yPEbl_ICNB0Rrp7I";
-  const URL_PRINCIPAL = "https://mechanicappco.firebaseio.com/";
+  const URL_PRINCIPAL = "https://mechanic.firebaseio.com/";
   const URL_CLIENTES = URL_PRINCIPAL + "Clientes/";
   const URL_SERVICIOS = URL_PRINCIPAL + "Servicios/";
   const URL_PARTNER = URL_PRINCIPAL + "Partner/";
@@ -29,7 +29,7 @@ app.listen(PORT, function() {
 
   /*--- INICIALIZANDO ---*/
   var principal = new Firebase(URL_PRINCIPAL);
-  var token = "csupocex7cgQBnmXDy4GCD6lMddoEEfT7EILCtBX";
+  var token = "ZbxlaQ9QYcTNyCEm2mUyzU2ywAfULwGVSXs40IjK";
   principal.authWithCustomToken(token, function(error, authData) { /* Your Code */ }, {
     remember: "default"
   });

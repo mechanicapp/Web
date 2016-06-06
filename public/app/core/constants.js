@@ -3,6 +3,8 @@
 
   angular
     .module('app.core')
-    .constant('FIREBASE_URL', 'https://mechanicappco.firebaseio.com/');
+    .constant('FIREBASE_URL', 'https://mechanic.firebaseio.com/')
+    .constant('PROTECTED_PATHS', ['/partner', '/cliente']);
+
 
 })();

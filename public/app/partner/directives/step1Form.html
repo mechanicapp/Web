@@ -1,0 +1,26 @@
+<form name="step1Form" ng-submit="step1Form.$valid && vm.submitAction({uPartner: vm.uPartner})" class="form-signin" novalidate>
+
+    <h2 class="form-signin-heading" ng-bind="vm.formTitle"></h2>
+
+    <!--Server authentication error-->
+    <p ng-show="vm.error" class="text-danger" ng-bind="vm.error"></p>
+
+    <!--Email input-->
+    <input ng-model="vm.uPartner.email" ng-model-options="{ updateOn: 'default blur', debounce: { default: 1000, blur: 0 } }" type="email" name="email" class="form-control" placeholder="Correo Electronico" required autofocus>
+
+    <!--Email error-->
+    <div ng-show="step1Form.$submitted">
+        <p ng-show="step1Form.email.$error.required" class="text-danger">Correo electronico obligatorio</p>
+        <p ng-show="step1Form.email.$error.email" class="text-danger">Por favor ingrese un correo valid.</p>
+    </div>
+
+    <!--Password input-->
+    <input ng-model="vm.uPartner.password" type="password" name="password" class="form-control" placeholder="Password" required>
+
+    <!--Password error-->
+    <div ng-show="step1Form.$submitted">
+        <p ng-show="step1Form.password.$error.required" class="text-danger">Contraseña obligatoria</p>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+</form>

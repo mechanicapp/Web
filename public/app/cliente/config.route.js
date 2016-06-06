@@ -12,6 +12,13 @@
       templateUrl: 'app/cliente/cliente.html',
       controller: 'ClienteController',
       controllerAs: 'nv',
+      resolve: { user: resolveUser }
     });
+
+    resolveUser.$inject = ['authService'];
+
+    function resolveUser(authService) {
+      return authService.firebaseAuthObject.$requireAuth();
+    }
   }
 })();

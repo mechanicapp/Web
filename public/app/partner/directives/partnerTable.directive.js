@@ -19,6 +19,12 @@
   }
   function PartnerTableController() {
     var vm = this;
+
+    vm.removePartner = removePartner;
+
+    function removePartner(partner) {
+      vm.partners.$remove(partner);
+    }
   }
 
 })();
