@@ -19,7 +19,7 @@
   "dependencies": {
     "dateformat": "^1.0.12",
     "express": "^4.13.4",
-    "firebase": "^2.4.2",
+    "firebase": "*",
     "google-distance": "^1.0.1"
   }
 }

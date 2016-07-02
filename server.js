@@ -125,6 +125,7 @@ app.listen(PORT, function() {
             removeNotificiaciones.remove();
           });
         }
+
         /*--- Al terminar el servicio ---*/
         if(terminado == 5){
           var urlCliente = new Firebase(URL_CLIENTES + idCliente + "/Historial");
